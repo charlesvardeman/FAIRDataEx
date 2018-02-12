@@ -1,0 +1,182 @@
+﻿@prefix dc: <http://purl.org/dc/terms/>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix fair: <http://datafairport.org/ontology/FAIR-schema.owl#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix FAI: <https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/FAIR-schema.owl#>.
+
+FAI:
+    protege:defaultLanguage
+       "en";
+    dc:creator
+        "http://orcid.org/0000-0001-6960-357X"^^<&xsd;anyURI>,
+        "http://orcid.org/0000-0003-4727-9435"^^<&xsd;anyURI>;
+    dc:license
+       "http://creativecommons.org/licenses/by/4.0/"^^<&xsd;anyURI>;
+    dc:title
+       "FAIR Ontology"@en;
+    vann:preferredNamespacePrefix
+       "fair"@en;
+    vann:preferredNamespaceUri
+       "http://datafairport.org/ontology/FAIR-schema.owl"^^<&xsd;string>;
+    a    owl:Ontology;
+    rdfs:comment
+       "FAIR Schema Ontology"^^<&xsd;string>;
+    rdfs:label
+       "FAIR Ontology";
+    owl:versionInfo
+       "alpha"^^<&xsd;string>.
+<https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&dc;creator>
+   a owl:AnnotationProperty.
+<https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&skos;preferredLabel>
+   a owl:AnnotationProperty.
+fair:describesUseOf
+    a    owl:ObjectProperty;
+    rdfs:comment
+       "The FAIR (or other ontology) Class URI";
+    rdfs:domain
+       [ a owl:Class; owl:unionOf ( fair:FAIRClass fair:FAIRProperty ) ];
+    rdfs:label
+       "describes use of"@en.
+fair:hasClass
+    a    owl:ObjectProperty;
+    rdfs:comment
+        "has class is a one-to-many relationship between a FAIR Profile and FAIR classes ";
+    rdfs:domain
+       fair:FAIRProfile;
+    rdfs:label
+       "has class"@en;
+    rdfs:range
+       fair:FAIRClass.
+fair:hasProperty
+    a    owl:ObjectProperty;
+    rdfs:comment
+        "has property is a one-to-many relationship between a FAIR Class and FAIR properties";
+    rdfs:domain
+       fair:FAIRClass;
+    rdfs:label
+       "has property"@en;
+    rdfs:range
+       fair:FAIRProperty.
+fair:allowedValues
+    a
+        owl:DatatypeProperty,
+        <https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&owl;FunctionalProperty>;
+    rdfs:comment
+       "The set of valid values for the specified property";
+    rdfs:domain
+       fair:FAIRProperty;
+    rdfs:label
+       "allowed values"@en;
+    rdfs:range
+        <https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&xsd;anyURI>.
+fair:maxCount
+    a    owl:DatatypeProperty;
+    rdfs:comment
+       "The maximum number of required occurrences of this property";
+    rdfs:domain
+       fair:FAIRProperty;
+    rdfs:label
+       "maximum count"@en;
+    rdfs:range
+        <https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&xsd;integer>.
+fair:minCount
+    a    owl:DatatypeProperty;
+    rdfs:comment
+       "The minimum number of required occurrences of this property";
+    rdfs:domain
+       fair:FAIRProperty;
+    rdfs:label
+       "minimum count"@en;
+    rdfs:range
+        <https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&xsd;integer>.
+fair:FAIRClass
+    a    owl:Class;
+    rdfs:comment
+        "A FAIR Class is a machine-readable description of a class in a data schema";
+    rdfs:label
+       "FAIR Class"@en;
+    rdfs:subClassOf
+            [ a    owl:Restriction;
+            owl:maxCardinality
+               "1"^^<&xsd;nonNegativeInteger>;
+            owl:onProperty
+               fair:describesUseOf ],
+            [ a    owl:Restriction;
+            owl:onProperty
+               fair:hasProperty;
+            owl:someValuesFrom
+               fair:FAIRProperty ],
+            [ a    owl:Restriction;
+            owl:minCardinality
+               "0"^^<&xsd;nonNegativeInteger>;
+            owl:onProperty
+               fair:describesUseOf ],
+            [ a    owl:Restriction;
+            owl:allValuesFrom
+               fair:FAIRProperty;
+            owl:onProperty
+               fair:hasProperty ].
+fair:FAIRProfile
+    a    owl:Class;
+    rdfs:comment
+       "A FAIR Profile is a machine-readable description of a data schema.";
+    rdfs:label
+       "FAIR Profile"@en;
+    rdfs:subClassOf
+            [ a    owl:Restriction;
+            owl:allValuesFrom
+               fair:FAIRClass;
+            owl:onProperty
+               fair:hasClass ],
+            [ a    owl:Restriction;
+            owl:onProperty
+               fair:hasClass;
+            owl:someValuesFrom
+               fair:FAIRClass ].
+fair:FAIRProperty
+    a    owl:Class;
+    rdfs:comment
+        "A FAIR Property is a machine-readable description of a property in a data schema";
+    rdfs:label
+       "FAIR Property"@en;
+    rdfs:subClassOf
+            [ a    owl:Restriction;
+            owl:maxQualifiedCardinality
+               "1"^^<&xsd;nonNegativeInteger>;
+            owl:onDataRange
+                <https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&xsd;integer>;
+            owl:onProperty
+               fair:minCount ],
+            [ a    owl:Restriction;
+            owl:allValuesFrom
+                <https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&xsd;integer>;
+            owl:onProperty
+               fair:minCount ],
+            [ a    owl:Restriction;
+            owl:onDataRange
+                <https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&xsd;anyURI>;
+            owl:onProperty
+               fair:allowedValues;
+            owl:qualifiedCardinality
+               "1"^^<&xsd;nonNegativeInteger> ],
+            [ a    owl:Restriction;
+            owl:allValuesFrom
+                <https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&xsd;integer>;
+            owl:onProperty
+               fair:maxCount ],
+            [ a    owl:Restriction;
+            owl:maxCardinality
+               "1"^^<&xsd;nonNegativeInteger>;
+            owl:onProperty
+               fair:describesUseOf ],
+            [ a    owl:Restriction;
+            owl:maxQualifiedCardinality
+               "1"^^<&xsd;nonNegativeInteger>;
+            owl:onDataRange
+                <https://github.com/FAIRDataInitiative/DataFairPort/blob/master/Schema/&xsd;integer>;
+            owl:onProperty
+               fair:maxCount ].
+
+
