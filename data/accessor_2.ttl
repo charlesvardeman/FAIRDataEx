@@ -1,0 +1,137 @@
+﻿@prefix Uni: <./>.
+@prefix n0: <http://purl.org/dc/elements/1.1/>.
+@prefix iso: <http://lexvo.org/id/iso639-3/>.
+@prefix n1: <https://creativecommons.org/licenses/by-nd/3.0/>.
+@prefix p: <http://purl.org/pav/>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix Un: </cgi-bin/Accessors/UniProtAccessor/>.
+@prefix dc: <http://www.w3.org/ns/dcat#>.
+@prefix www: <http://www.uniprot.org/>.
+@prefix uni: <http://uniprot.org/>.
+@prefix is: <http://id.loc.gov/vocabulary/iso639-1/>.
+@prefix n2: <http://xmlns.com/foaf/0.1/>.
+@prefix sp: <http://sparql.uniprot.org/>.
+@prefix un: <http://identifiers.org/uniprot/>.
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix FAI: <http://datafairport.org/ontology/FAIR-schema.owl#>.
+@prefix r2rml: <http://www.w3.org/ns/r2rml#>.
+@prefix core: <http://purl.uniprot.org/core/>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#>.
+@prefix ed: <http://edamontology.org/>.
+
+Uni:A0A1U8QFC5
+    n0:bibliographicCitation
+        "The UniProt Consortium (2015). UniProt: a hub for protein information. Nucleic Acids Res. 43: D204-D212";
+    n0:creator
+       "UniProt Consortium";
+    n0:language
+       iso:eng;
+    n0:license
+       n1:;
+    n0:title
+       "UniProt Protein A0A1U8QFC5";
+    p:version
+       "UniProt release 2016_09";
+    void:inDataset
+       Un:;
+    dc:contactPoint
+       www:contact;
+    dc:description
+        """Uncharacterized protein
+""";
+    dc:distribution
+        <#Distribution95838772-100C-11E8-B267-12FEEB89C62A>,
+        <#Distribution95843D98-100C-11E8-B267-12FEEB89C62A>,
+        <#Distribution95B41810-100C-11E8-B267-12FEEB89C62A>,
+        <#Distribution95B47706-100C-11E8-B267-12FEEB89C62A>;
+    dc:identifier
+       uni:A0A1U8QFC5;
+    dc:keyword
+        "Annotation",
+        "Aspergillus nidulans",
+        "Aspergillus",
+        "Functinal Annotation",
+        "GO",
+        "Gene Ontology",
+        "Proteins",
+        "RNA Processing";
+    dc:landingPage
+       <http://uniprot.org>;
+    dc:language
+       is:en;
+    dc:publisher
+       <http://uniprot.org>;
+    n2:page
+       sp:sparql, uni:;
+    n2:primaryTopic
+       un:A0A1U8QFC5.
+<#Distribution95838772-100C-11E8-B267-12FEEB89C62A>
+    n0:format
+       "text/html";
+    a    n0:Dataset, dc:Distribution;
+    dc:downloadURL
+       <http://www.uniprot.org/uniprot/A0A1U8QFC5.html>.
+<#Distribution95843D98-100C-11E8-B267-12FEEB89C62A>
+    n0:format
+       "application/rdf+xml";
+    a    n0:Dataset, void:Dataset, dc:Distribution;
+    dc:downloadURL
+       <http://www.uniprot.org/uniprot/A0A1U8QFC5.rdf>.
+<#Distribution95B41810-100C-11E8-B267-12FEEB89C62A>
+    n0:format
+       "application/rdf+xml", "application/x-turtle", "text/html";
+    rml:hasMapping
+       <#Mappings95B41810-100C-11E8-B267-12FEEB89C62A>;
+    a    FAI:Projector, n0:Dataset, void:Dataset, dc:Distribution;
+    dc:downloadURL
+        <http://linkeddata.systems:3001/fragments?subject=http%3A%2F%2Fidentifiers%2Eorg%2Funiprot%2FA0A1U8QFC5&predicate=http%3A%2F%2Fpurl%2Euniprot%2Eorg%2Fcore%2Forganism>.
+<#Distribution95B47706-100C-11E8-B267-12FEEB89C62A>
+    n0:format
+       "application/rdf+xml", "application/x-turtle", "text/html";
+    rml:hasMapping
+       <#Mappings95B47706-100C-11E8-B267-12FEEB89C62A>;
+    a    FAI:Projector, n0:Dataset, void:Dataset, dc:Distribution;
+    dc:downloadURL
+        <http://linkeddata.systems:3001/fragments?subject=http%3A%2F%2Fidentifiers%2Eorg%2Funiprot%2FA0A1U8QFC5&predicate=http%3A%2F%2Fpurl%2Euniprot%2Eorg%2Fcore%2FclassifiedWith>.
+<#Mappings95B41810-100C-11E8-B267-12FEEB89C62A>
+    rml:logicalSource
+       <#Source95B41810-100C-11E8-B267-12FEEB89C62A>;
+    r2rml:predicateObjectMap
+       <#POMap95B41810-100C-11E8-B267-12FEEB89C62A>;
+    r2rml:subjectMap
+       <#SubjectMap95B41810-100C-11E8-B267-12FEEB89C62A>.
+<#Mappings95B47706-100C-11E8-B267-12FEEB89C62A>
+    rml:logicalSource
+       <#Source95B47706-100C-11E8-B267-12FEEB89C62A>;
+    r2rml:predicateObjectMap
+       <#POMap95B47706-100C-11E8-B267-12FEEB89C62A>;
+    r2rml:subjectMap
+       <#SubjectMap95B47706-100C-11E8-B267-12FEEB89C62A>.
+<#ObjectMap95B41810-100C-11E8-B267-12FEEB89C62A>
+   r2rml:parentTriplesMap <#SubjectMap295B41810-100C-11E8-B267-12FEEB89C62A>.
+<#ObjectMap95B47706-100C-11E8-B267-12FEEB89C62A>
+   r2rml:parentTriplesMap <#SubjectMap295B47706-100C-11E8-B267-12FEEB89C62A>.
+<#POMap95B41810-100C-11E8-B267-12FEEB89C62A>
+    r2rml:objectMap
+       <#ObjectMap95B41810-100C-11E8-B267-12FEEB89C62A>;
+    r2rml:predicate
+       core:organism.
+<#POMap95B47706-100C-11E8-B267-12FEEB89C62A>
+    r2rml:objectMap
+       <#ObjectMap95B47706-100C-11E8-B267-12FEEB89C62A>;
+    r2rml:predicate
+       core:classifiedWith.
+<#Source95B41810-100C-11E8-B267-12FEEB89C62A>
+   rml:referenceFormulation ql:TriplePatternFragments.
+<#Source95B47706-100C-11E8-B267-12FEEB89C62A>
+   rml:referenceFormulation ql:TriplePatternFragments.
+<#SubjectMap295B41810-100C-11E8-B267-12FEEB89C62A>
+   r2rml:class ed:data_1179; r2rml:template "http://identifiers.org/taxon/{TAX}".
+<#SubjectMap295B47706-100C-11E8-B267-12FEEB89C62A>
+   r2rml:class ed:data_1176; r2rml:template "http://purl.obolibrary.org/obo/{GO}".
+<#SubjectMap95B41810-100C-11E8-B267-12FEEB89C62A>
+   r2rml:class core:Protein; r2rml:template "http://identifiers.org/uniprot/{ID}".
+<#SubjectMap95B47706-100C-11E8-B267-12FEEB89C62A>
+   r2rml:class ed:data_0896; r2rml:template "http://identifiers.org/uniprot/{ID}".
+
+

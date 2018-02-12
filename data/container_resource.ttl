@@ -1,0 +1,166 @@
+﻿@prefix Acc: <./>.
+@prefix n0: <http://purl.org/dc/elements/1.1/>.
+@prefix wil: <http://wilkinsonlab.info/>.
+@prefix iso: <http://lexvo.org/id/iso639-3/>.
+@prefix n1: <https://creativecommons.org/licenses/by-nd/4.0/>.
+@prefix p: <http://purl.org/pav/>.
+@prefix orc: <http://orcid.org/>.
+@prefix void: <http://rdfs.org/ns/void#>.
+@prefix pro: <http://vocab.ox.ac.uk/projectfunding#>.
+@prefix dcm: <http://purl.org/dc/dcmitype/>.
+@prefix ldp: <http://www.w3.org/ns/ldp#>.
+@prefix prov: <http://www.w3.org/ns/prov#>.
+@prefix dc: <http://www.w3.org/ns/dcat#>.
+@prefix Ac: </cgi-bin/Accessors/>.
+@prefix uni: <http://uniprot.org/>.
+@prefix is: <http://id.loc.gov/vocabulary/iso639-1/>.
+@prefix Uni: <UniProtAccessor/>.
+@prefix n2: <http://xmlns.com/foaf/0.1/>.
+@prefix sp: <http://sparql.uniprot.org/>.
+
+Acc:UniProtAccessor
+    n0:creator
+       wil:;
+    n0:language
+       iso:eng;
+    n0:license
+       n1:;
+    n0:title
+       "UniProt Slice FAIR Accessor - Aspergillus RNA Processing proteins";
+    p:authoredBy
+       orc:0000-0002-9699-485X;
+    p:version
+       "UniProt release 2016_09";
+    void:entities
+       "92";
+    pro:term_hasPrincipalInvestigator
+       "Dr. Mark Wilkinson";
+    a    dcm:Dataset, ldp:BasicContainer, prov:Collection;
+    dc:contactPoint
+       <http://biordf.org/DataFairPort/MiscRDF/Wilkinson.rdf>;
+    dc:description
+        """Takes a SPARQL query of the UniProt database specific to proteins and their GO annotations related to RNA Procssing proteins in Aspergillus and makes it a FAIR Accessor source.  The query being executed is:
+
+
+PREFIX up:<http://purl.uniprot.org/core/>
+PREFIX taxon:<http://purl.uniprot.org/taxonomy/>
+PREFIX rdf:<http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX GO:<http://purl.obolibrary.org/obo/GO_>
+SELECT DISTINCT ?id
+
+WHERE
+{
+   ?protein a up:Protein ;
+   up:organism taxon:227321 ;
+   up:classifiedWith/rdfs:subClassOf GO:0006397 .
+   BIND(substr(str(?protein), 33) as ?id)
+}                                    """;
+    dc:identifier
+       Ac:UniProtAccessor;
+    dc:keyword
+       "Aspergillus nidulans", "Aspergillus", "Proteins", "RNA Processing";
+    dc:landingPage
+       uni:;
+    dc:language
+       is:en;
+    dc:publisher
+       wil:;
+    dc:theme
+       </ConceptSchemes/RNA_Processing_conceptscheme.rdf>;
+    ldp:contains
+        Uni:A0A1U8QFC5,
+        Uni:A0A1U8QFI3,
+        Uni:A0A1U8QGX1,
+        Uni:A0A1U8QHB8,
+        Uni:A0A1U8QI78,
+        Uni:A0A1U8QJQ3,
+        Uni:A0A1U8QNV3,
+        Uni:A0A1U8QTJ3,
+        Uni:A0A1U8QVK2,
+        Uni:A0A1U8QWD6,
+        Uni:A0A1U8QWS8,
+        Uni:A0A1U8QWX2,
+        Uni:C8V1L6,
+        Uni:C8V2B3,
+        Uni:C8V609,
+        Uni:C8V6T1,
+        Uni:C8V8F9,
+        Uni:C8V9C2,
+        Uni:C8V9G4,
+        Uni:C8VBS9,
+        Uni:C8VBV2,
+        Uni:C8VC84,
+        Uni:C8VEV9,
+        Uni:C8VF70,
+        Uni:C8VFC9,
+        Uni:C8VFF2,
+        Uni:C8VFR4,
+        Uni:C8VKT6,
+        Uni:C8VKT7,
+        Uni:C8VMX4,
+        Uni:C8VRC5,
+        Uni:C8VRD4,
+        Uni:C8VT05,
+        Uni:Q5AQR8,
+        Uni:Q5ASK8,
+        Uni:Q5ATV4,
+        Uni:Q5AUI5,
+        Uni:Q5AUL5,
+        Uni:Q5AVC5,
+        Uni:Q5AW50,
+        Uni:Q5AW57,
+        Uni:Q5AW74,
+        Uni:Q5AWP0,
+        Uni:Q5AXG6,
+        Uni:Q5AXS7,
+        Uni:Q5AY95,
+        Uni:Q5AYX3,
+        Uni:Q5AZR7,
+        Uni:Q5AZX0,
+        Uni:Q5AZY8,
+        Uni:Q5B020,
+        Uni:Q5B056,
+        Uni:Q5B0G8,
+        Uni:Q5B0V3,
+        Uni:Q5B186,
+        Uni:Q5B1X8,
+        Uni:Q5B2M6,
+        Uni:Q5B2N4,
+        Uni:Q5B2V6,
+        Uni:Q5B409,
+        Uni:Q5B465,
+        Uni:Q5B5U0,
+        Uni:Q5B5Z8,
+        Uni:Q5B6N8,
+        Uni:Q5B8P8,
+        Uni:Q5B987,
+        Uni:Q5BAH3,
+        Uni:Q5BAJ7,
+        Uni:Q5BB35,
+        Uni:Q5BBT8,
+        Uni:Q5BCH2,
+        Uni:Q5BCN3,
+        Uni:Q5BD85,
+        Uni:Q5BDB2,
+        Uni:Q5BDG7,
+        Uni:Q5BDR1,
+        Uni:Q5BDW4,
+        Uni:Q5BDX0,
+        Uni:Q5BDY0,
+        Uni:Q5BE22,
+        Uni:Q5BE42,
+        Uni:Q5BEB1,
+        Uni:Q5BF06,
+        Uni:Q5BFB3,
+        Uni:Q5BFF3,
+        Uni:Q5BGN2,
+        Uni:Q5BGP1,
+        Uni:Q5BGW9,
+        Uni:Q5BH19,
+        Uni:Q5BH47,
+        Uni:Q5BH71,
+        Uni:Q5BHD3;
+    n2:page
+       sp:sparql, uni:.
+
+

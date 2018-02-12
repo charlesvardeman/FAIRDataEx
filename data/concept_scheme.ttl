@@ -1,0 +1,198 @@
+﻿@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix t: <http://purl.uniprot.org/taxonomy/>.
+@prefix t0: <http://identifiers.org/taxonomy/>.
+@prefix obo: <http://purl.obolibrary.org/obo/>.
+
+   t:162425 a skos:Concept; skos:prefLabel "Aspergillus nidulans" .
+   t0:162425 a skos:Concept; skos:prefLabel "Aspergillus nidulans" .
+   obo:GO_0002098 a skos:Concept; skos:prefLabel "tRNA wobble uridine modification" .
+obo:GO_0004479
+   a skos:Concept; skos:prefLabel "methionyl-tRNA formyltransferase activity".
+obo:GO_0004808
+    a    skos:Concept;
+    skos:prefLabel
+       "tRNA (5-methylaminomethyl-2-thiouridylate)-methyltransferase activity".
+   obo:GO_0006378 a skos:Concept; skos:prefLabel "mRNA polyadenylation" .
+obo:GO_0006388
+    a    skos:Concept;
+    skos:prefLabel
+       "tRNA splicing, via endonucleolytic cleavage and ligation".
+   obo:GO_0006400 a skos:Concept; skos:prefLabel "tRNA modification" .
+   obo:GO_0030488 a skos:Concept; skos:prefLabel "tRNA methylation" .
+obo:GO_0019988
+   a skos:Concept; skos:prefLabel "charged-tRNA amino acid modification".
+obo:GO_0016436
+   a skos:Concept; skos:prefLabel "rRNA (uridine) methyltransferase activity".
+obo:GO_0016434
+   a skos:Concept; skos:prefLabel "rRNA (cytosine) methyltransferase activity".
+   obo:GO_0031119 a skos:Concept; skos:prefLabel "tRNA pseudouridine synthesis" .
+   obo:GO_0031167 a skos:Concept; skos:prefLabel "rRNA methylation" .
+   obo:GO_0034227 a skos:Concept; skos:prefLabel "tRNA thio-modification" .
+obo:GO_0070038
+    a    skos:Concept;
+    skos:prefLabel
+       "rRNA (pseudouridine-N3-)-methyltransferase activity".
+   obo:GO_0034470 a skos:Concept; skos:prefLabel "ncRNA processing" .
+   obo:GO_0036265 a skos:Concept; skos:prefLabel "RNA (guanine-N7)-methylation" .
+obo:GO_0070040
+   a skos:Concept; skos:prefLabel "rRNA (adenine-C2-)-methyltransferase activity".
+obo:GO_0070039
+    a    skos:Concept;
+    skos:prefLabel
+       "rRNA (guanosine-2'-O-)-methyltransferase activity".
+obo:GO_0070041
+   a skos:Concept; skos:prefLabel "rRNA (uridine-C5-)-methyltransferase activity".
+obo:GO_0070043
+   a skos:Concept; skos:prefLabel "rRNA (guanine-N7-)-methyltransferase activity".
+obo:GO_0070042
+   a skos:Concept; skos:prefLabel "rRNA (uridine-N3-)-methyltransferase activity".
+   obo:GO_0070329 a skos:Concept; skos:prefLabel "tRNA seleno-modification" .
+   obo:GO_0070475 a skos:Concept; skos:prefLabel "rRNA base methylation" .
+obo:GO_0070677
+    a    skos:Concept;
+    skos:prefLabel
+       "rRNA (cytosine-2'-O-)-methyltransferase activity".
+obo:GO_0071424
+   a skos:Concept; skos:prefLabel "rRNA (cytosine-N4-)-methyltransferase activity".
+obo:GO_0035597
+    a    skos:Concept;
+    skos:prefLabel
+       "N6-isopentenyladenosine methylthiotransferase activity".
+   obo:GO_0035600 a skos:Concept; skos:prefLabel "tRNA methylthiolation" .
+obo:GO_0036307
+    a    skos:Concept;
+    skos:prefLabel
+       "23S rRNA (adenine(2030)-N(6))-methyltransferase activity".
+obo:GO_0036308
+    a    skos:Concept;
+    skos:prefLabel
+       "16S rRNA (guanine(1516)-N(2))-methyltransferase activity".
+obo:GO_0042781
+   a skos:Concept; skos:prefLabel "3'-tRNA processing endoribonuclease activity".
+obo:GO_0061504
+    a    skos:Concept;
+    skos:prefLabel
+       "cyclic threonylcarbamoyladenosine biosynthetic process".
+   obo:GO_0006364 a skos:Concept; skos:prefLabel "rRNA processing" .
+   obo:GO_0006397 a skos:Concept; skos:prefLabel "mRNA processing" .
+   obo:GO_0008033 a skos:Concept; skos:prefLabel "tRNA processing" .
+obo:GO_0000179
+    a    skos:Concept;
+    skos:prefLabel
+       "rRNA (adenine-N6,N6-)-dimethyltransferase activity".
+   obo:GO_0000372 a skos:Concept; skos:prefLabel "Group I intron splicing" .
+obo:GO_0000453
+   a skos:Concept; skos:prefLabel "enzyme-directed rRNA 2'-O-methylation".
+obo:GO_0000455
+   a skos:Concept; skos:prefLabel "enzyme-directed rRNA pseudouridine synthesis".
+obo:GO_0000462
+    a    skos:Concept;
+    skos:prefLabel
+        "maturation of SSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)".
+   obo:GO_0000470 a skos:Concept; skos:prefLabel "maturation of LSU-rRNA" .
+obo:GO_0000478
+    a    skos:Concept;
+    skos:prefLabel
+       "endonucleolytic cleavage involved in rRNA processing".
+   obo:GO_0000967 a skos:Concept; skos:prefLabel "rRNA 5'-end processing" .
+   obo:GO_0001680 a skos:Concept; skos:prefLabel "tRNA 3'-terminal CCA addition" .
+   obo:GO_0001682 a skos:Concept; skos:prefLabel "tRNA 5'-leader removal" .
+   obo:GO_0002097 a skos:Concept; skos:prefLabel "tRNA wobble base modification" .
+   obo:GO_0002099 a skos:Concept; skos:prefLabel "tRNA wobble guanine modification" .
+obo:GO_0002100
+   a skos:Concept; skos:prefLabel "tRNA wobble adenosine to inosine editing".
+obo:GO_0002143
+   a skos:Concept; skos:prefLabel "tRNA wobble position uridine thiolation".
+obo:GO_0002128
+   a skos:Concept; skos:prefLabel "tRNA nucleoside ribose methylation".
+   obo:GO_0002136 a skos:Concept; skos:prefLabel "wobble base lysidine biosynthesis" .
+   obo:GO_0002101 a skos:Concept; skos:prefLabel "tRNA wobble cytosine modification" .
+obo:GO_0002131
+   a skos:Concept; skos:prefLabel "wobble position cytosine ribose methylation".
+obo:GO_0002132
+   a skos:Concept; skos:prefLabel "wobble position uridine ribose methylation".
+obo:GO_0002935
+   a skos:Concept; skos:prefLabel "tRNA (adenine-C2-)-methyltransferase activity".
+   obo:GO_0002943 a skos:Concept; skos:prefLabel "tRNA dihydrouridine synthesis" .
+   obo:GO_0002937 a skos:Concept; skos:prefLabel "tRNA 4-thiouridine biosynthesis" .
+   obo:GO_0002939 a skos:Concept; skos:prefLabel "tRNA N1-guanine methylation" .
+   obo:GO_0002938 a skos:Concept; skos:prefLabel "tRNA guanine ribose methylation" .
+obo:GO_0002949
+   a skos:Concept; skos:prefLabel "tRNA threonylcarbamoyladenosine modification".
+   obo:GO_0030490 a skos:Concept; skos:prefLabel "maturation of SSU-rRNA" .
+   obo:GO_0031118 a skos:Concept; skos:prefLabel "rRNA pseudouridine synthesis" .
+   obo:GO_0042780 a skos:Concept; skos:prefLabel "tRNA 3'-end processing" .
+obo:GO_0008989
+   a skos:Concept; skos:prefLabel "rRNA (guanine-N1-)-methyltransferase activity".
+obo:GO_0008988
+   a skos:Concept; skos:prefLabel "rRNA (adenine-N6-)-methyltransferase activity".
+obo:GO_0008990
+   a skos:Concept; skos:prefLabel "rRNA (guanine-N2-)-methyltransferase activity".
+obo:GO_0016300
+   a skos:Concept; skos:prefLabel "tRNA (uracil) methyltransferase activity".
+   obo:GO_0051391 a skos:Concept; skos:prefLabel "tRNA acetylation" .
+obo:GO_0009019
+   a skos:Concept; skos:prefLabel "tRNA (guanine-N1-)-methyltransferase activity".
+obo:GO_0052665
+   a skos:Concept; skos:prefLabel "tRNA (uracil-2'-O-)-methyltransferase activity".
+obo:GO_0052666
+    a    skos:Concept;
+    skos:prefLabel
+       "tRNA (cytosine-2'-O-)-methyltransferase activity".
+obo:GO_0052906
+    a    skos:Concept;
+    skos:prefLabel
+       "tRNA (guanine(37)-N(1))-methyltransferase activity".
+obo:GO_0052907
+    a    skos:Concept;
+    skos:prefLabel
+       "23S rRNA (adenine(1618)-N(6))-methyltransferase activity".
+obo:GO_0052908
+    a    skos:Concept;
+    skos:prefLabel
+        "16S rRNA (adenine(1518)-N(6)/adenine(1519)-N(6))-dimethyltransferase activity".
+obo:GO_0052911
+    a    skos:Concept;
+    skos:prefLabel
+       "23S rRNA (guanine(745)-N(1))-methyltransferase activity".
+obo:GO_0052913
+    a    skos:Concept;
+    skos:prefLabel
+       "16S rRNA (guanine(966)-N(2))-methyltransferase activity".
+obo:GO_0052914
+    a    skos:Concept;
+    skos:prefLabel
+       "16S rRNA (guanine(1207)-N(2))-methyltransferase activity".
+obo:GO_0052916
+    a    skos:Concept;
+    skos:prefLabel
+       "23S rRNA (guanine(1835)-N(2))-methyltransferase activity".
+obo:GO_0052915
+    a    skos:Concept;
+    skos:prefLabel
+       "23S rRNA (guanine(2445)-N(2))-methyltransferase activity".
+obo:GO_0008176
+   a skos:Concept; skos:prefLabel "tRNA (guanine-N7-)-methyltransferase activity".
+obo:GO_0008650
+    a    skos:Concept;
+    skos:prefLabel
+       "rRNA (uridine-2'-O-)-methyltransferase activity".
+obo:GO_0017150
+   a skos:Concept; skos:prefLabel "tRNA dihydrouridine synthase activity".
+obo:GO_0009383
+   a skos:Concept; skos:prefLabel "rRNA (cytosine-C5-)-methyltransferase activity".
+obo:GO_0009020
+    a    skos:Concept;
+    skos:prefLabel
+       "tRNA (guanosine-2'-O-)-methyltransferase activity".
+obo:GO_0016430
+   a skos:Concept; skos:prefLabel "tRNA (adenine-N6-)-methyltransferase activity".
+obo:GO_0030697
+    a    skos:Concept;
+    skos:prefLabel
+       "S-adenosylmethionine-dependent tRNA (m5U54) methyltransferase activity".
+obo:GO_0089715
+   a skos:Concept; skos:prefLabel "tRNA m6t6A37 methyltransferase activity".
+   obo:GO_0042779 a skos:Concept; skos:prefLabel "tRNA 3'-trailer cleavage" .
+
+
